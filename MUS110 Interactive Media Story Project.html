@@ -1,0 +1,188 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>MUS110 Story Project</title>
+<style>
+
+body {
+	margin:50px 0 50px 0;
+	padding:0;
+	text-align:center;
+	background:#eeeeee;
+	font-family:"Futura", "Helvetica", "verdana", "lucida sans", "trebuchet", "Myriad Pro", "Lucida Grande", "Arial", sans-serif;
+	font-size:18px;
+	color:#000;
+	text-decoration:none;
+	overflow-x:hidden;
+	}
+	
+.slideshowWindow {
+	width:890px;
+	height:600px;
+	margin:0px auto;
+	text-align:left;
+	padding:0px;
+	position:relative;
+	overflow:hidden;
+	border:solid white 5px;
+	-moz-border-radius: 15px;
+	-webkit-border-radius: 15px;
+	border-radius: 15px;
+	}
+	
+	.slideshowTape{
+		position:absolute;
+		left:0px;
+		top:0px;	
+		width:900px;
+		padding:0px;
+		-webkit-transition: all 0.2s ease-in-out;
+		-moz-transition: all 0.2s ease-in-out;
+	}
+	
+		.slide{
+			float:left;
+			width:900px;
+			height:600px;
+			background:#FFFFFF;
+			margin:0px;
+			padding:0px;
+			overflow:hidden;
+			text-align:center;
+		}
+
+.textarea{
+	float:left;
+	width:820px;
+	margin:0px 40px 0px 40px;
+}
+		
+img{
+	-webkit-border-radius:15px;
+	-moz-border-radius:15px;
+	border-radius: 15px;
+	opacity:0.7;
+}
+
+img:hover{
+	opacity:1;
+}
+		
+.floatRight{
+	float:right;
+	margin:20px;
+}
+
+.floatLeft{
+	float:left;
+	margin:20px;
+}
+
+.floatCenter{
+	float:left;
+	margin:20px 295px 0px 295px;
+}
+
+.twobuttons{
+	float:left;
+	margin:20px 100px 0px 100px;
+}
+
+</style>
+</head>
+
+<body>
+<div id="mainContent">
+    <div id="slideshowBox">
+        <div class="slideshowWindow" id="slideshowWindow_1">
+            <div class="slideshowTape" id="slideshowTape_1">
+            <!---
+            slide width:600px
+            slide height:400px
+            number of slides:11
+            --->
+                <div class="slide" id="slide0">
+                    <a href="#" onclick="goto(1);">Click here to play</a>
+                </div>
+                <div class="slide" id="slide1">
+                    <div class="textarea"><h1> </h1>
+                    <p> </p></div>
+                    <a href="#" onclick="goto(2);"><img src="image1.jpg" width='300px' class="floatCenter" /></a>
+                </div>
+                <div class="slide" id="slide2">
+                    <div class="textarea"><h1> </h1>
+                    <p> </p></div>
+                    <div class="twobuttons">
+                    <a href="#" onclick="goto(3);"><img id="pic2" src="image2a.jpg" width='300px' class="floatLeft" /></a>
+                    <a href="#" onclick="goto(4);"><img id="pic1" src="image2b.jpg" width='300px' class="floatRight" /></a>
+                    </div>
+                </div>
+                <div class="slide" id="slide3">
+                    <div class="textarea"><h1> </h1>
+                    <p> </p></div>
+                    <div class="twobuttons">
+                    <a href="#" onclick="goto(5);"><img id="pic3" src="image3a.jpg" width='300px' class="floatLeft" /></a>
+                    <a href="#" onclick="goto(7);"><img src="image3b.jpg" width='300px' class="floatRight" /></a>
+                    </div>
+                </div>
+                <div class="slide" id="slide4">
+                    <div class="textarea"><h1> </h1>
+                    <p> </p></div>
+                    <div class="twobuttons">
+                    <a href="#" onclick="goto(7);"><img id="pic4" src="image4a.jpg" width='300px' class="floatLeft" /></a>
+                    <a href="#" onclick="goto(6);"><img src="image4b.jpg" width='300px' class="floatRight" /></a>
+                    </div>
+                </div>
+                <div class="slide" id="slide5">
+                    <div class="textarea"><h1> </h1>
+                    <p> </p></div>
+                    <div class="twobuttons">
+                    <a href="#" onclick="goto(8);"><img id="pic5" src="image5a.jpg" width='300px' class="floatLeft" /></a>
+                    <a href="#" onclick="goto(7);"><img id="pic7" src="image5b.jpg" width='300px' class="floatRight" /></a>
+                    </div>
+                </div>
+                <div class="slide" id="slide6">
+                    <div class="textarea"><h1> </h1>
+                    <p> </p></div>
+                    <div class="twobuttons">
+                    <a href="#" onclick="goto(7);"><img id="pic6" src="image6a.jpg" width='300px' class="floatLeft" /></a>
+                    <a href="#" onclick="goto(8);"><img id="pic8" src="image6b.jpg" width='300px' class="floatRight" /></a>
+                    </div>
+                </div>
+                <div class="slide" id="slide7">
+                    <div class="textarea"><h1> </h1>
+                    <p> </p></div>
+                    <a href="#" onclick="goto(2);"><img src="image7.jpg" width='300px' class="floatCenter" /></a>
+                </div>
+                <div class="slide" id="slide8">
+                    <div class="textarea"><h1> </h1>
+                    <p> </p></div>
+                    <a href="#" onclick="goto(1);"><img src="image8.jpg" width='300px' class="floatCenter" /></a>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+<span id="blank"></span>
+</body>
+<script>
+
+function goto(slideID) {
+	/*if (Math.floor ( ( Math.random ( ) * 2 + 1 ) ) <= 1){
+		document.getElementById("pic"+slideID).setAttribute("class", "floatRight");
+	}
+	else {
+		document.getElementById("pic"+slideID).setAttribute("class", "floatLeft");
+	}*/
+	document.body.style.background = '#'+(Math.random()*0xFFFFFF<<0).toString(16);
+	document.getElementById("blank").innerHTML="<embed src=\"audio"+slideID+".mp3\" hidden=\"true\" autostart=\"true\" loop=\"false\" />";
+	document.getElementById("slideshowTape_1").style.top = ((slideID) * -600) + "px";
+}
+
+/*goto(0);*/
+
+</script>
+
+</html>
